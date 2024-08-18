@@ -1,0 +1,80 @@
+.header {
+    text-shadow: 4px 4px var(--ruddy-blue);
+    font-size: 40px;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    width: 40vw;
+    text-align: left;
+}
+
+
+.typing {
+    border-right: 1px solid white;
+    animation:
+        blinking 1s steps(1, end) infinite,
+        typing 1.5s steps(20, end);
+
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes blinking {
+    0% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: white;
+    }
+
+    100% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.box {
+    width: 80%;
+    height: 70%;
+    text-align: left;
+    margin: auto;
+}
+
+.text {
+    font-size: 25px;
+    width: 80%;
+    text-align: left;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.continue-button {
+    background-color: var(--ruddy-blue);
+    font-size: 25px;
+    padding: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 200px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+}
+
+.continue-button:hover {
+    background-color: var(--jordy-blue);
+    cursor: pointer;
+}
+
+.center-div {
+    margin: auto;
+    width: 100%;
+}

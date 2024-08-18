@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+.thanks {
+    width: 70%;
+    margin: auto;
+}
+
+.thanks h2 {
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    text-shadow: 4px 4px var(--ruddy-blue);
+    animation: 0.7s ease-out 0s 1 fadeInSlideTop;
+
+}
+
+body {
+    background-color: var(--honolulu-blue);
+
+    overflow: hidden;
+}
+
+.creator-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: auto;
+    animation: 0.7s ease-out 0s 1 fadeInSlideBottom;
+}
+
+.creator {
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.creator img {
+    width: 130px;
+    margin: auto;
+    display: block;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+
+.creator h4 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+.creator a:link,
+.creator a:visited {
+    text-decoration: none;
+    color: var(--uranian-blue);
+    margin: 5px;
+}
+
+.creator a:hover {
+    color: var(--salmon-pink);
+    cursor: pointer;
+}
+
+.play-again a:link,
+.play-again a:visited {
+    color: var(--uranian-blue);
+    text-decoration: none;
+    position: absolute;
+    bottom: 30px;
+    width: 50%;
+    right: 25%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.play-again a:hover {
+    color: var(--salmon-pink);
+    cursor: pointer;
+}

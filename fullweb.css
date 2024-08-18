@@ -1,0 +1,128 @@
+* {
+  color: var(--white);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  background-image: url("img/background.png");
+  background-color: var(--honolulu-blue);
+  background-size: cover;
+}
+
+.space {
+  height: 90px;
+}
+
+.small-space {
+  height: 40px;
+}
+
+:root {
+  --salmon-pink: rgb(255, 194, 200);
+  --lilac: #C692BCff;
+  --light-sky-blue: #93CCF8ff;
+  --jordy-blue: rgb(24, 89, 138);
+  --honolulu-blue: rgb(0, 16, 26);
+  --ultra-violet: #5E6390ff;
+  --uranian-blue: #B1D6F9ff;
+  --white: #d9d9d9;
+  --celestial-blue: #318ECBff;
+  --glaucous: #19264f;
+  --ruddy-blue: #66A9E0ff;
+  --black: #293240;
+  --gray: #9c9c9c;
+}
+
+/* controls animations */
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {}
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeInSlideBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeInSlideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes slideInBottom {
+  0% {
+    transform: translateY(50%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInSlideBottom {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeInSlideTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes rainEffect {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(10deg);
+
+  }
+
+  100% {
+    transform: rotate(-10deg);
+  }
+}

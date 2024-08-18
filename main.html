@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InQuizative AI</title>
+
+    <link href="main.css" rel="stylesheet">
+    <link href="fullweb.css" rel="stylesheet">
+    <script src="main.js">
+    </script>
+    <script src="quote.js">
+
+    </script>
+
+
+
+</head>
+
+<body>
+    <!--IMPORTS FOR AI-->
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+      </script>
+    <a class="float-right" id="contributers" href="credits.html">Contributors</a>
+
+    <div class="main-page" id="text">
+        <div class="main-title">
+            <h3 class="main-title-text typing">
+                Enter your text below . . .
+
+            </h3>
+        </div>
+
+        <div class="spacer"></div>
+        <div class="box-body">
+
+            <textarea wrap="soft" value="Enter text here" class="text-box" id="myText" type="text">
+
+
+
+        </textarea>
+            <!-- <p id="text" onclick="deleteText()">Double click to enter text here</p> -->
+            <div class="sidebar">
+                <div class="quote-box">
+                    <div class="quote-container">
+                        <p class="quote" id="motivId">
+                            Embrace each step of your journey with courage and grace.
+                        </p>
+
+                    </div>
+
+
+
+                    <button class="quote-btn" onclick="quote()"> Generate Quote
+                    </button>
+
+                </div>
+                <div class="sidebar-spacer">
+                </div>
+
+                <div class="question-box">
+                    <label>Difficulty:</label>
+                    <div class="spacer"></div>
+                    <div class="counter-box">
+                        <button onclick="difficultyMinus()" class="counter">
+                            < </button>
+                                <div class="counter">
+                                    <p id="difficulty">Easy</p>
+                                </div>
+                                <button onclick="difficultyPlus()" class="counter">
+                                    >
+                                </button>
+                    </div>
+                </div>
+                <div class="question-box">
+                    <label>Number of questions:</label>
+                    <div class="spacer"></div>
+                    <input class="user-input" id="num-q" type="text">
+
+                </div>
+                <div class="question-box">
+                    <label>Number of cycles:</label>
+                    <div class="spacer"></div>
+                    <input class="user-input" id="num-cycle" type=" text">
+
+                </div>
+                <button class="input" id="submit-btn" onclick="showQuiz()"> Generate Questions
+                </button>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--START OF QUIZ HTML-->
+
+    <div class="quiz-box" id="quiz-box">
+        <div class="question">
+            <h3 id="qtn-title">Question Title</h3>
+
+        </div>
+        <div class="answer-box">
+            <button class="answer" id="opt1">
+
+            </button>
+            <button class="answer" id="opt2">
+
+            </button>
+            <button class="answer" id="opt3">
+
+            </button>
+            <button class="answer" id="opt4">
+
+            </button>
+            <button class="answer" id="opt5">
+
+            </button>
+
+        </div>
+    </div>
+    <div class="center-score">
+        <p id="score"></p>
+
+
+    </div>
+
+    <a href="index.html">
+        <button id="back-btn" class="return" onclick="reset()">
+            Back to main menu
+        </button>
+    </a>
+
+    <button class="next" id="next-btn">
+        NEXT
+    </button>
+</body>
+<script type="module" src="quizAI.js"></script>
+
+
+
+</html>
